@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "nodemon  src/index.ts",
+    "dev": "nodemon  src/app.ts",
     "build": "tsc",
     "server:start": "pm2 start dist/index.js --node-args=--experimental-specifier-resolution=node",
     "server:stop": "pm2 stop dist/index.js --node-args=--experimental-specifier-resolution=node",
@@ -31,7 +31,6 @@
     "eslint-config-prettier": "^8.8.0",
     "eslint-import-resolver-typescript": "^3.5.5",
     "eslint-plugin-import": "^2.27.5",
-    "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-promise": "^6.1.1",
     "nodemon": "^2.0.22",
