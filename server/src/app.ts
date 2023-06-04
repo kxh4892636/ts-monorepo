@@ -7,28 +7,36 @@
  *
  * Copyright (c) 2023 by xiaohan kong, All Rights Reserved.
  */
-import express from "express";
-import cors from "cors";
-import helmet from "helmet";
+import Fastify from "fastify";
+import cors from "@fastify/cors";
+import helmet from "@fastify/helmet";
+import formbody from "@fastify/formbody";
 
-const app = express();
-const port = 6789;
+const fastify = Fastify({
+  logger: true,
+});
+await fastify.register(cors);
+await fastify.register(helmet);
+await fastify.register(formbody);
 
-// cors
-app.use(cors());
-// helmet
-app.use(helmet());
-// parse application/x-www-form-urlencoded
-app.use(express.urlencoded({ extended: false }));
-// parse application/json
-app.use(express.json());
-
-// route
-app.get("/", (req, res) => {
-  console.log(req.query);
-  res.send("Hello, world.");
+fastify.get("/", async () => {
+  return "Hello, world!";
 });
 
-app.listen(port, () => {
-  console.log(`Hello, world`);
+fastify.post("/test", async (req) => {
+  console.log(req.body);
+  return "post success";
 });
+
+/**
+ * Run the server!
+ */
+const start = async () => {
+  try {
+    await fastify.listen({ port: 6789 });
+  } catch (err) {
+    fastify.log.error(err);
+    process.exit(1);
+  }
+};
+start();

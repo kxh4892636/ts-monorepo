@@ -12,6 +12,8 @@
   },
   "dependencies": {
     "@ant-design/icons": "^5.1.4",
+    "@trpc/client": "^10.28.2",
+    "@trpc/server": "^10.28.2",
     "antd": "^5.5.2",
     "axios": "^1.4.0",
     "echarts": "^5.4.2",
