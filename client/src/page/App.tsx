@@ -1,7 +1,19 @@
-export default function App() {
+import { styled } from "styled-components";
+
+const Container = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+`;
+
+const App = () => {
   return (
-    <div className="h-screen w-screen flex items-center justify-center">
-      <h1 className="text-4xl">Hello world!</h1>
-    </div>
+    <Container>
+      <div style={{ fontWeight: "bold", fontSize: "40px" }}>Hello, World!</div>
+    </Container>
   );
-}
+};
+
+export default App;
