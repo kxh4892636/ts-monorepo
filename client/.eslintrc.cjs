@@ -6,6 +6,7 @@ module.exports = {
     "plugin:@typescript-eslint/recommended",
     "plugin:import/recommended",
     "plugin:import/typescript",
+    "plugin:jsdoc/recommended",
     "plugin:jsx-a11y/recommended",
     "plugin:promise/recommended",
     "plugin:react/recommended",

@@ -12,6 +12,8 @@ import cors from "@fastify/cors";
 import helmet from "@fastify/helmet";
 import formbody from "@fastify/formbody";
 
+
+
 const fastify = Fastify({
   logger: true,
 });
