@@ -1,0 +1,40 @@
+{
+  "name": "@kxh/fastify",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon  src/app.ts",
+    "build": "tsc",
+    "server:start": "pm2 start dist/index.js --node-args=--experimental-specifier-resolution=node",
+    "server:stop": "pm2 stop dist/index.js --node-args=--experimental-specifier-resolution=node",
+    "lint:check": "eslint src --max-warnings 0",
+    "lint:fix": "prettier --write src"
+  },
+  "dependencies": {
+    "@fastify/cors": "^8.3.0",
+    "@fastify/formbody": "^7.4.0",
+    "@fastify/helmet": "^10.1.1",
+    "@fastify/websocket": "^8.1.0",
+    "@prisma/client": "^4.15.0",
+    "execa": "^7.1.1",
+    "fastify": "^4.17.0",
+    "fastify-multer": "^2.0.3",
+    "pm2": "^5.3.0",
+    "zod": "^3.21.4"
+  },
+  "devDependencies": {
+    "@kxh/config-eslint-ts-node": "workspace:^",
+    "@kxh/config-prettier": "workspace:^",
+    "@kxh/config-ts-node": "workspace:^",
+    "@types/node": "^18.16.16",
+    "@types/ws": "^8.5.4",
+    "nodemon": "^2.0.22",
+    "prisma": "^4.15.0",
+    "ts-node": "^10.9.1"
+  }
+}

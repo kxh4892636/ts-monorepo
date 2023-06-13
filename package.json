@@ -1,0 +1,29 @@
+{
+  "name": "ts_monorepo",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "author": "Xiaohan Kong <kxh4892636@gmail.com> (https://github.com/kxh4892636)",
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "**/*.{ts,tsx}": [
+      "eslint --max-warnings 0"
+    ],
+    "**/*.{json,ts,tsx,html}": [
+      "prettier --write"
+    ]
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.6.5",
+    "@commitlint/config-conventional": "^17.6.5",
+    "eslint": "^8.42.0",
+    "husky": "^8.0.0",
+    "lint-staged": "^13.2.2",
+    "prettier": "^2.8.8",
+    "typescript": "^5.1.3"
+  }
+}

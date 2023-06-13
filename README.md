@@ -1,1 +1,1 @@
-# ts-fullstack-template
+# ts_monorepo

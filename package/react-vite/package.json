@@ -1,0 +1,37 @@
+{
+  "name": "@kxh/react-vite",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite --port 5678",
+    "build": "tsc && vite build",
+    "server:start": "vite preview --port 5678",
+    "lint:check": "eslint src --max-warnings 0",
+    "lint:fix": "prettier --write src"
+  },
+  "dependencies": {
+    "@ant-design/icons": "^5.1.4",
+    "antd": "^5.6.1",
+    "axios": "^1.4.0",
+    "immer": "^10.0.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.11.2",
+    "styled-components": "6.0.0-rc.3",
+    "zod": "^3.21.4",
+    "zustand": "^4.3.8"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.8",
+    "@types/react-dom": "^18.2.4",
+    "@vitejs/plugin-react-swc": "^3.3.1",
+    "@kxh/config-eslint-ts-react": "workspace:^",
+    "@kxh/config-prettier": "workspace:^",
+    "@kxh/config-ts-vite-react": "workspace:^",
+    "vite": "^4.3.9"
+  }
+}

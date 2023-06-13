@@ -1,0 +1,24 @@
+{
+  "name": "@kxh/node",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "scripts": {
+    "lint:check": "eslint src --max-warnings 0",
+    "lint:fix": "prettier --write src"
+  },
+  "dependencies": {
+    "zod": "^3.21.4"
+  },
+  "devDependencies": {
+    "@kxh/config-eslint-ts-node": "workspace:^",
+    "@kxh/config-prettier": "workspace:^",
+    "@kxh/config-ts-node": "workspace:^",
+    "@types/node": "^18.16.16",
+    "ts-node": "^10.9.1"
+  }
+}
