@@ -13,7 +13,7 @@
     "**/*.{ts,tsx}": [
       "eslint --max-warnings 0"
     ],
-    "**/*.{json,ts,tsx,html}": [
+    "**/*.{json,cjs,ts,tsx,html,css}": [
       "prettier --write"
     ]
   },

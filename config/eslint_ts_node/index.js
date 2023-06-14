@@ -15,4 +15,15 @@ module.exports = {
   parserOptions: { ecmaVersion: "latest", sourceType: "module" },
   plugins: ["@typescript-eslint", "promise", "prettier"],
   rules: { "prettier/prettier": "error" },
+  settings: {
+    "import/resolver": {
+      typescript: {
+        alwaysTryTypes: true,
+        project: ["tsconfig.json", "package/*/tsconfig.json"],
+      },
+      node: {
+        project: ["tsconfig.json", "package/*/tsconfig.json"],
+      },
+    },
+  },
 };
