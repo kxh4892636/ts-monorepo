@@ -22,14 +22,17 @@ module.exports = {
     "prettier/prettier": "error",
   },
   settings: {
-    "import/resolver": {
-      typescript: {
-        alwaysTryTypes: true,
-        project: ["tsconfig.json", "package/*/tsconfig.json"],
-      },
-      node: {
-        project: ["tsconfig.json", "package/*/tsconfig.json"],
-      },
+    react: {
+      version: "detect",
     },
+    // "import/resolver": {
+    //   typescript: {
+    //     alwaysTryTypes: true,
+    //     project: ["tsconfig.json", "package/*/tsconfig.json"],
+    //   },
+    //   node: {
+    //     project: ["tsconfig.json", "package/*/tsconfig.json"],
+    //   },
+    // },
   },
 };
