@@ -9,12 +9,14 @@ module.exports = {
     "plugin:import/recommended",
     "plugin:import/typescript",
     "plugin:promise/recommended",
-    "plugin:prettier/recommended",
   ],
   parser: "@typescript-eslint/parser",
   parserOptions: { ecmaVersion: "latest", sourceType: "module" },
-  plugins: ["@typescript-eslint", "promise", "prettier"],
-  rules: { "prettier/prettier": "error" },
+  plugins: ["@typescript-eslint", "promise"],
+  rules: { 
+    "no-multiple-empty-lines": ["error", { "max": 1, "maxEOF": 0 }],
+    "array-element-newline": ["error", { "multiline": true }]
+   },
   settings: {
     "import/resolver": {
       typescript: {

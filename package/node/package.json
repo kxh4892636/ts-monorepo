@@ -9,7 +9,7 @@
   "license": "MIT",
   "scripts": {
     "lint:check": "eslint src --max-warnings 0",
-    "lint:fix": "prettier --write src"
+    "lint:fix": "eslint src --fix"
   },
   "dependencies": {
     "zod": "^3.21.4"

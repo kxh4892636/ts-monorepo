@@ -13,13 +13,13 @@ module.exports = {
     "plugin:react/recommended",
     "plugin:react/jsx-runtime",
     "plugin:react-hooks/recommended",
-    "plugin:prettier/recommended",
   ],
   parser: "@typescript-eslint/parser",
   parserOptions: { ecmaVersion: "latest", sourceType: "module" },
-  plugins: ["@typescript-eslint", "jsx-a11y", "promise", "prettier", "import"],
+  plugins: ["@typescript-eslint", "jsx-a11y", "promise", "import"],
   rules: {
-    "prettier/prettier": "error",
+    "no-multiple-empty-lines": ["error", { "max": 1, "maxEOF": 0 }],
+    "array-element-newline": ["error", { "multiline": true }]
   },
   settings: {
     react: {
