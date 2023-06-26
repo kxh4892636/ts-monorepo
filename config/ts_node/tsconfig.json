@@ -11,6 +11,7 @@
     "noFallthroughCasesInSwitch": true,
     "skipLibCheck": true
   },
+  "exclude": ["**/test.ts"],
   "ts-node": {
     "esm": true,
     "experimentalSpecifierResolution": "node"

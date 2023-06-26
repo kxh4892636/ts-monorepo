@@ -3,11 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "private": true,
-  "author": "Xiaohan Kong <kxh4892636@gmail.com> (https://github.com/kxh4892636)",
+  "author": "XiaoHan Kong <kxh4892636@gmail.com> (https://github.com/kxh4892636)",
   "license": "MIT",
   "main": "tsconfig.json",
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  }
+  "devDependencies": {}
 }

@@ -9,15 +9,16 @@
   "license": "MIT",
   "scripts": {
     "lint:check": "eslint src --max-warnings 0",
-    "lint:fix": "eslint src --fix"
+    "lint:fix": "eslint src --fix",
+    "test": "jest",
+    "test:coverage": "jest --coverage"
   },
   "dependencies": {
-    "zod": "^3.21.4"
   },
   "devDependencies": {
     "@kxh/config-eslint-ts-node": "workspace:^",
-    "@kxh/config-prettier": "workspace:^",
     "@kxh/config-ts-node": "workspace:^",
+    "@kxh/config-jest-ts-node": "workspace:^",
     "@types/node": "^18.16.16",
     "ts-node": "^10.9.1"
   }

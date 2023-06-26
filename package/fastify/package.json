@@ -13,7 +13,9 @@
     "server:start": "pm2 start dist/index.js --node-args=--experimental-specifier-resolution=node",
     "server:stop": "pm2 stop dist/index.js --node-args=--experimental-specifier-resolution=node",
     "lint:check": "eslint src --max-warnings 0",
-    "lint:fix": "eslint src --fix"
+    "lint:fix": "eslint src --fix",
+    "test": "jest",
+    "test:coverage": "jest --coverage"
   },
   "dependencies": {
     "@fastify/cors": "^8.3.0",
@@ -29,8 +31,8 @@
   },
   "devDependencies": {
     "@kxh/config-eslint-ts-node": "workspace:^",
-    "@kxh/config-prettier": "workspace:^",
     "@kxh/config-ts-node": "workspace:^",
+    "@kxh/config-jest-ts-node": "workspace:^",
     "@types/node": "^18.16.16",
     "@types/ws": "^8.5.4",
     "nodemon": "^2.0.22",
