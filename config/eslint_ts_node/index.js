@@ -16,7 +16,8 @@ module.exports = {
   plugins: ["@typescript-eslint","import", "promise", "jest"],
   rules: {
     "no-multiple-empty-lines": ["error", { "max": 1, "maxEOF": 0 }],
-    "array-element-newline": ["error", { "multiline": true }]
+    "array-element-newline": ["error", { "multiline": true }],
+    "max-len": ["error", { "code": 80 }]
   },
   settings: {
     "import/resolver": {

@@ -1,7 +1,7 @@
 const App = () => {
   return (
-    <div style={{ fontWeight: "bold", fontSize: "40px" }}>Hello, World!</div>
-  );
-};
+    <div style={{ fontWeight: 'bold', fontSize: '40px' }}>Hello, World!</div>
+  )
+}
 
-export default App;
+export default App
