@@ -1,6 +1,6 @@
 const App = () => {
   return (
-    <div style={{ fontWeight: 'bold', fontSize: '40px' }}>Hello, World!</div>
+    <div className="font-bold text-red-600">Hello, World!</div>
   )
 }
 
