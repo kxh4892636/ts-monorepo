@@ -1,6 +1,17 @@
+import { styled } from 'styled-components'
+
+const Head = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  color: red;
+  height: 80vh;
+`
+
 const App = () => {
   return (
-    <div className="font-bold text-red-600">Hello, World!</div>
+    <Head>Hello, World!</Head>
   )
 }
 

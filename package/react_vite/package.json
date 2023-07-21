@@ -23,6 +23,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.11.2",
+    "styled-components": "^6.0.4",
     "zod": "^3.21.4",
     "zustand": "^4.3.8"
   },
@@ -33,9 +34,6 @@
     "@types/react": "^18.2.8",
     "@types/react-dom": "^18.2.4",
     "@vitejs/plugin-react-swc": "^3.3.1",
-    "autoprefixer": "^10.4.14",
-    "postcss": "^8.4.25",
-    "tailwindcss": "^3.3.2",
     "vite": "^4.3.9"
   }
 }
