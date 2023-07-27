@@ -161,6 +161,9 @@ importers:
       '@types/node':
         specifier: ^18.16.6
         version: 18.16.16
+      dotenv:
+        specifier: ^16.3.1
+        version: 16.3.1
       nodemon:
         specifier: ^2.0.22
         version: 2.0.22
@@ -4484,6 +4487,11 @@ packages:
     engines: {node: '>=8'}
     dependencies:
       is-obj: 2.0.0
+    dev: true
+
+  /dotenv@16.3.1:
+    resolution: {integrity: sha512-IPzF4w4/Rd94bA9imS68tZBaYyBWSCE47V1RGuMrB94iyTOIEwRmVL2x/4An+6mETpLrKJ5hQkB8W4kFAadeIQ==}
+    engines: {node: '>=12'}
     dev: true
 
   /eastasianwidth@0.2.0:

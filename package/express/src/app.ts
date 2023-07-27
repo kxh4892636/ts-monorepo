@@ -1,15 +1,9 @@
-/*
- * @file: server index.ts
- * @Author: xiaohan kong
- * @Date: 2023-02-24
- * @LastEditors: xiaohan kong
- * @LastEditTime: 2023-02-24
- *
- * Copyright (c) 2023 by xiaohan kong, All Rights Reserved.
- */
 import cors from 'cors'
+import * as dotenv from 'dotenv'
 import express, { json, urlencoded } from 'express'
 import helmet from 'helmet'
+
+dotenv.config()
 
 const app = express()
 const port = 4321
@@ -29,4 +23,5 @@ app.get('/', (req, res) => {
 
 app.listen(port, () => {
   console.log('4321')
+  console.log(process.env.TEST)
 })
