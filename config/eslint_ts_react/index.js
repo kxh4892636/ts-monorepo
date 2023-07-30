@@ -21,7 +21,9 @@ module.exports = {
   rules: {
     "no-multiple-empty-lines": ["error", { "max": 1, "maxEOF": 0 }],
     "array-element-newline": ["error", "consistent"],
-    "max-len": ["error", { "code": 200 }]
+    "max-len": ["error", { "code": 200 }],
+    'import/default':0,
+    'import/no-named-as-default-member':0,
   },
   settings: {
     react: {
