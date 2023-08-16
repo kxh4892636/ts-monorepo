@@ -8,14 +8,14 @@
   "author": "",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon  src/app.ts",
+    "dev": "nodemon  src/main.ts",
     "build": "tsc",
     "server:start": "pm2 start dist/index.js --node-args=--experimental-specifier-resolution=node",
     "server:stop": "pm2 stop dist/index.js --node-args=--experimental-specifier-resolution=node",
     "lint:check": "eslint src --max-warnings 0",
     "lint:fix": "eslint src --fix",
-    "test": "jest",
-    "test:coverage": "jest --coverage"
+    "test": "jest /test",
+    "test:coverage": "jest /test --coverage"
   },
   "dependencies": {
     "@prisma/client": "^4.15.0",
@@ -25,6 +25,7 @@
     "helmet": "^6.0.1",
     "multer": "^1.4.5-lts.1",
     "pm2": "^5.3.0",
+    "tinypool": "^0.7.0",
     "zod": "^3.21.4"
   },
   "devDependencies": {
@@ -37,7 +38,6 @@
     "@types/node": "^18.16.6",
     "nodemon": "^2.0.22",
     "prisma": "^4.15.0",
-    "ts-node": "^10.9.1",
-    "dotenv": "^16.3.1"
+    "ts-node": "^10.9.1"
   }
 }

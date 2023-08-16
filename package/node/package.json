@@ -10,8 +10,9 @@
   "scripts": {
     "lint:check": "eslint src --max-warnings 0",
     "lint:fix": "eslint src --fix",
-    "test": "jest",
-    "test:coverage": "jest --coverage"
+    "test": "jest /test",
+    "test:coverage": "jest /test --coverage",
+    "build": "tsc"
   },
   "dependencies": {
   },
