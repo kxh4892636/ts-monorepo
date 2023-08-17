@@ -12,7 +12,7 @@
     "lint:fix": "eslint src --fix",
     "test": "jest /test",
     "test:coverage": "jest /test --coverage",
-    "build": "tsc"
+    "build": "node ./esbuild.config.js"
   },
   "dependencies": {
   },
@@ -21,6 +21,7 @@
     "@kxh/config-ts-node": "workspace:^",
     "@kxh/config-jest-ts-node": "workspace:^",
     "@types/node": "^18.16.16",
-    "ts-node": "^10.9.1"
+    "ts-node": "^10.9.1",
+    "esbuild": "^0.19.2"
   }
 }

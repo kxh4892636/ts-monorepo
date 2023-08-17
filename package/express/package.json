@@ -9,9 +9,9 @@
   "license": "MIT",
   "scripts": {
     "dev": "nodemon  src/main.ts",
-    "build": "tsc",
-    "server:start": "pm2 start dist/index.js --node-args=--experimental-specifier-resolution=node",
-    "server:stop": "pm2 stop dist/index.js --node-args=--experimental-specifier-resolution=node",
+    "build": "node ./esbuild.config.js",
+    "server:start": "pm2 start dist/main.js --node-args=--experimental-specifier-resolution=node",
+    "server:stop": "pm2 stop dist/main.js --node-args=--experimental-specifier-resolution=node",
     "lint:check": "eslint src --max-warnings 0",
     "lint:fix": "eslint src --fix",
     "test": "jest /test",
@@ -26,7 +26,8 @@
     "multer": "^1.4.5-lts.1",
     "pm2": "^5.3.0",
     "tinypool": "^0.7.0",
-    "zod": "^3.21.4"
+    "zod": "^3.21.4",
+    "esbuild": "^0.19.2"
   },
   "devDependencies": {
     "@kxh/config-eslint-ts-node": "workspace:^",

@@ -1,5 +1,6 @@
 {
   "name": "@kxh/config-ts-node",
+  "type": "module",
   "version": "1.0.0",
   "description": "",
   "private": true,
