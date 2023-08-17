@@ -1,4 +1,4 @@
-/* eslint-disable no-dupe-keys */
+
 import * as esbuild from 'esbuild'
 
 await esbuild.build({
@@ -10,7 +10,6 @@ await esbuild.build({
   format: 'esm',
   minify: true,
   target: 'esnext',
-  platform: 'node',
   banner: {
     js: `
         import path from 'path';
