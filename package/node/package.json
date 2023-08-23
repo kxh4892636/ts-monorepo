@@ -1,28 +1,27 @@
 {
-    "name": "@kxh/node",
-    "version": "1.0.0",
-    "description": "",
-    "private": true,
-    "type": "module",
-    "keywords": [],
-    "author": "",
-    "license": "MIT",
-    "scripts": {
-        "lint": "eslint src/**/* test/**/* --max-warnings 0",
-        "prettier": "prettier src/**/* test/**/* --write",
-        "format": "pnpm prettier && pnpm lint",
-        "test": "jest /test",
-        "test:coverage": "jest /test --coverage",
-        "build": "node ./esbuild.config.js"
-    },
-    "dependencies": {},
-    "devDependencies": {
-        "@kxh/config-eslint-ts-node": "workspace:^",
-        "@kxh/config-ts-node": "workspace:^",
-        "@kxh/config-jest-ts-node": "workspace:^",
-        "@kxh/config-prettier": "workspace:^",
-        "@types/node": "^18.16.16",
-        "ts-node": "^10.9.1",
-        "esbuild": "^0.19.2"
-    }
+  "name": "@kxh/node",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint src/**/* test/**/* --max-warnings 0",
+    "prettier": "prettier src/**/* test/**/* --write",
+    "format": "pnpm prettier && pnpm lint",
+    "test": "jest /test",
+    "test:coverage": "jest /test --coverage",
+    "build": "node ./esbuild.config.js"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@kxh/config-eslint-ts-node": "workspace:^",
+    "@kxh/config-node-ts": "workspace:^",
+    "@kxh/config-jest-ts-node": "workspace:^",
+    "@kxh/config-prettier": "workspace:^",
+    "@types/node": "^18.16.16",
+    "ts-node": "^10.9.1"
+  }
 }
