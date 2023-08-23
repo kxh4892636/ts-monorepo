@@ -14,6 +14,7 @@ module.exports = {
     "plugin:react/recommended",
     "plugin:react/jsx-runtime",
     "plugin:react-hooks/recommended",
+    "plugin:prettier/recommended"
   ],
   parser: "@typescript-eslint/parser",
   parserOptions: { ecmaVersion: "latest", sourceType: "module" },
@@ -21,7 +22,6 @@ module.exports = {
   rules: {
     "no-multiple-empty-lines": ["error", { "max": 1, "maxEOF": 0 }],
     "array-element-newline": ["error", "consistent"],
-    "max-len": ["error", { "code": 200 }],
     'import/default':0,
     'import/no-named-as-default-member':0,
   },

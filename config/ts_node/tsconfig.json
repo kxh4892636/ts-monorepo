@@ -10,11 +10,11 @@
     "noUnusedLocals": true,
     "noFallthroughCasesInSwitch": true,
     "skipLibCheck": true,
-    "sourceMap": true,
+    "sourceMap": true
   },
   "exclude": ["**/test.ts"],
   "ts-node": {
     "esm": true,
     "experimentalSpecifierResolution": "node"
-  },
+  }
 }

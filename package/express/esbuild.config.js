@@ -1,15 +1,14 @@
-
-import * as esbuild from 'esbuild'
+import * as esbuild from "esbuild";
 
 await esbuild.build({
-  entryPoints: ['src/main.ts'],
+  entryPoints: ["src/main.ts"],
   bundle: true,
-  platform: 'node',
-  outdir: 'dist',
+  platform: "node",
+  outdir: "dist",
   sourcemap: true,
-  format: 'esm',
+  format: "esm",
   minify: true,
-  target: 'esnext',
+  target: "esnext",
   banner: {
     js: `
         import path from 'path';
@@ -18,6 +17,6 @@ await esbuild.build({
         const require = topLevelCreateRequire(import.meta.url);
         const __filename = fileURLToPath(import.meta.url);
         const __dirname = path.dirname(__filename);
-        `
-  }
-})
+        `,
+  },
+});
