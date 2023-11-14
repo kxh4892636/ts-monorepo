@@ -1,0 +1,7 @@
+{
+  "extends": "@kxh/config-node-ts",
+  "include": ["src"],
+  "compilerOptions": {
+    "outDir": "./dist"
+  }
+}

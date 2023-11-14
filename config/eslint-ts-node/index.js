@@ -9,15 +9,15 @@ module.exports = {
     "plugin:import/recommended",
     "plugin:import/typescript",
     "plugin:promise/recommended",
-    "plugin:prettier/recommended"
+    "plugin:prettier/recommended",
   ],
   parser: "@typescript-eslint/parser",
   parserOptions: { ecmaVersion: "latest", sourceType: "module" },
-  plugins: ["@typescript-eslint","import", "promise", "jest"],
+  plugins: ["@typescript-eslint", "import", "promise", "jest"],
   rules: {
-    "no-multiple-empty-lines": ["error", { "max": 1, "maxEOF": 0 }],
-    'import/default':0,
-    'import/no-named-as-default-member':0,
+    "no-multiple-empty-lines": ["error", { max: 1, maxEOF: 0 }],
+    "import/default": 0,
+    "import/no-named-as-default-member": 0,
   },
   settings: {
     "import/resolver": {

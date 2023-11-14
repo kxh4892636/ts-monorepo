@@ -13,19 +13,19 @@ module.exports = {
     "plugin:react/recommended",
     "plugin:react/jsx-runtime",
     "plugin:react-hooks/recommended",
-    "plugin:prettier/recommended"
+    "plugin:prettier/recommended",
   ],
   parser: "@typescript-eslint/parser",
   parserOptions: { ecmaVersion: "latest", sourceType: "module" },
   plugins: ["@typescript-eslint", "jsx-a11y", "promise", "import", "jest"],
   rules: {
-    "no-multiple-empty-lines": ["error", { "max": 1, "maxEOF": 0 }],
-    'import/default':0,
-    'import/no-named-as-default-member':0,
+    "no-multiple-empty-lines": ["error", { max: 1, maxEOF: 0 }],
+    "import/default": 0,
+    "import/no-named-as-default-member": 0,
   },
   settings: {
     react: {
       version: "detect",
-    }
+    },
   },
 };

@@ -11,5 +11,5 @@ export const config = {
         diagnostics: false,
       },
     ],
-  }
+  },
 };
