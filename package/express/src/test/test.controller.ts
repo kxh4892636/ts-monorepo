@@ -1,5 +1,5 @@
 import { NextFunction, Request, Response } from 'express'
-import { testService } from '../service/test.service'
+import { testService } from './test.service'
 
 class TestController {
   async test(req: Request, res: Response, next: NextFunction) {

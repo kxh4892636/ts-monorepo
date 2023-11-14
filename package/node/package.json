@@ -8,12 +8,12 @@
   "author": "",
   "license": "MIT",
   "scripts": {
+    "build": "node ./esbuild.config.js",
     "lint": "eslint src/**/* test/**/* --max-warnings 0",
     "prettier": "prettier src/**/* test/**/* --write",
     "format": "pnpm prettier && pnpm lint",
     "test": "jest /test",
-    "test:coverage": "jest /test --coverage",
-    "build": "node ./esbuild.config.js"
+    "test:coverage": "jest /test --coverage"
   },
   "dependencies": {},
   "devDependencies": {

@@ -1,9 +1,7 @@
 import cors from 'cors'
 import express, { json, urlencoded } from 'express'
 import helmet from 'helmet'
-import swaggerJSDoc from 'swagger-jsdoc'
-import swaggerUi from 'swagger-ui-express'
-import { testRoute } from '../route/test.route'
+import { testRoute } from '../test/test.route'
 import { errorHandle } from './error'
 
 // NOTE
