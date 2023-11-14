@@ -21,6 +21,7 @@
     "@kxh/config-node-ts": "workspace:^",
     "@kxh/config-jest-ts-node": "workspace:^",
     "@kxh/config-prettier": "workspace:^",
+    "@kxh/config-esbuild": "workspace:^",
     "@types/node": "^18.16.16",
     "ts-node": "^10.9.1"
   }

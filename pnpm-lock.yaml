@@ -197,6 +197,9 @@ importers:
 
   package/node:
     devDependencies:
+      "@kxh/config-esbuild":
+        specifier: workspace:^
+        version: link:../../config/esbuild
       "@kxh/config-eslint-ts-node":
         specifier: workspace:^
         version: link:../../config/eslint-ts-node

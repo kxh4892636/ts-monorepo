@@ -3,7 +3,7 @@ import { NextFunction, Request, Response } from 'express'
 // NOTE express 错误处理
 export const errorHandle = (
   err: Error,
-  req: Request,
+  _req: Request,
   res: Response,
   next: NextFunction,
 ) => {

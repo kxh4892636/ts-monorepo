@@ -13,7 +13,6 @@ export class App {
     this.app = express()
     this.initializeMiddleware()
     this.initializeRoutes()
-    this.initializeSwagger()
     this.initializeErrorHandle()
   }
 
@@ -30,21 +29,6 @@ export class App {
 
   private initializeRoutes() {
     this.app.use('/test', testRoute)
-  }
-
-  private initializeSwagger() {
-    const options = {
-      definition: {
-        openapi: '3.0.0',
-        info: {
-          title: 'express-demo',
-          version: '1.0.0',
-        },
-      },
-      apis: ['./src/route/*route*'],
-    }
-    const swaggerSpec = swaggerJSDoc(options)
-    this.app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec))
   }
 
   private initializeErrorHandle() {
