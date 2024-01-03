@@ -1,48 +1,48 @@
 import cors from 'cors'
-import express, { json, urlencoded } from 'express'
+import express, { Express, json, urlencoded } from 'express'
 import helmet from 'helmet'
 import { testRoute } from '../test/test.route'
 import { errorHandle } from './error'
 
-// NOTE
-export class App {
-  private app: express.Application
-  private port = 1234
+const initializeMiddleware = (app: Express) => {
+  // cors
+  app.use(cors())
+  // helmet
+  app.use(helmet())
+  // parse application/x-www-form-urlencoded
+  app.use(urlencoded({ extended: false }))
+  // parse application/json
+  app.use(json())
+}
 
-  constructor() {
-    this.app = express()
-    this.initializeMiddleware()
-    this.initializeRoutes()
-    this.initializeErrorHandle()
-  }
+const initializeRoutes = (app: Express) => {
+  app.use('/test', testRoute)
+}
 
-  private initializeMiddleware() {
-    // cors
-    this.app.use(cors())
-    // helmet
-    this.app.use(helmet())
-    // parse application/x-www-form-urlencoded
-    this.app.use(urlencoded({ extended: false }))
-    // parse application/json
-    this.app.use(json())
-  }
+const initializeErrorHandle = (app: Express) => {
+  app.use(errorHandle)
+}
 
-  private initializeRoutes() {
-    this.app.use('/test', testRoute)
-  }
+const appListen = (app: Express, port: number) => {
+  app.listen(port, () => {
+    if (process.env.NODE_ENV === 'production') {
+      console.log('production')
+    } else {
+      process.env.NODE_ENV = 'development'
+      console.log('development')
+    }
+  })
+}
 
-  private initializeErrorHandle() {
-    this.app.use(errorHandle)
-  }
+export const createApp = (port: number) => {
+  const app = express()
+  initializeMiddleware(app)
+  initializeRoutes(app)
+  initializeErrorHandle(app)
 
-  public listen() {
-    this.app.listen(this.port, () => {
-      if (process.env.NODE_ENV === 'production') {
-        console.log('production')
-      } else {
-        process.env.NODE_ENV = 'development'
-        console.log('development')
-      }
-    })
+  return {
+    listen: () => {
+      appListen(app, port)
+    },
   }
 }

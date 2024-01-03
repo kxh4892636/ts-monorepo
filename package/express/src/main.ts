@@ -1,4 +1,4 @@
-import { App } from './core/app'
+import { createApp } from './core/app'
 
-const app = new App()
+const app = createApp(1234)
 app.listen()

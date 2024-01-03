@@ -4,4 +4,4 @@ import { testMiddleware } from './test.middleware'
 
 export const testRoute = Router()
 
-testRoute.use(testMiddleware.test, testController.test)
+testRoute.get('', testMiddleware.test, testController.test)

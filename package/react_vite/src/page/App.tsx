@@ -6,11 +6,26 @@ const Head = styled.div`
   justify-content: center;
   font-size: 40px;
   color: red;
-  height: 80vh;
+  height: 100vh;
+  background-color: green;
 `
 
 const App = () => {
-  return <Head>Hello, World!</Head>
+  return (
+    <Head
+      onClick={async () => {
+        const response = await fetch('http://localhost:1234/test')
+          .then((res) => res.text())
+          .then((value) => {
+            return value
+          })
+
+        alert(response)
+      }}
+    >
+      Hello, World!
+    </Head>
+  )
 }
 
 export default App
