@@ -1,18 +1,7 @@
-import { styled } from 'styled-components'
-
-const Head = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 40px;
-  color: red;
-  height: 100vh;
-  background-color: green;
-`
-
 const App = () => {
   return (
-    <Head
+    <button
+      className="flex-auto bg-slate-100 text-red-600 h-screen w-screen text-6xl"
       onClick={async () => {
         const response = await fetch('http://localhost:1234/test')
           .then((res) => res.text())
@@ -24,7 +13,7 @@ const App = () => {
       }}
     >
       Hello, World!
-    </Head>
+    </button>
   )
 }
 
