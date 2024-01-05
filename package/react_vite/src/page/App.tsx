@@ -1,7 +1,9 @@
+import { Button } from '@/component/ui/button'
+
 const App = () => {
   return (
-    <button
-      className="flex-auto bg-slate-100 text-red-600 h-screen w-screen text-6xl"
+    <Button
+      className="flex-auto text-red-600 h-screen w-screen text-6xl"
       onClick={async () => {
         const response = await fetch('http://localhost:1234/test')
           .then((res) => res.text())
@@ -13,7 +15,7 @@ const App = () => {
       }}
     >
       Hello, World!
-    </button>
+    </Button>
   )
 }
 
