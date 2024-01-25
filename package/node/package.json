@@ -12,16 +12,12 @@
     "lint": "eslint src/**/* test/**/* --max-warnings 0",
     "prettier": "prettier src/**/* test/**/* --write",
     "format": "pnpm prettier && pnpm lint",
-    "test": "jest /test",
-    "test:coverage": "jest /test --coverage"
+    "test": "vitest --config ./vitest.config.ts",
+    "test:coverage": "vitest run --config ./vitest.config.ts --coverage",
+    "bench": "vitest bench --config ./vitest.config.ts"
   },
   "dependencies": {},
   "devDependencies": {
-    "@kxh/config-eslint-ts-node": "workspace:^",
-    "@kxh/config-node-ts": "workspace:^",
-    "@kxh/config-jest-ts-node": "workspace:^",
-    "@kxh/config-prettier": "workspace:^",
-    "@kxh/config-esbuild": "workspace:^",
     "@types/node": "^18.16.16",
     "ts-node": "^10.9.1"
   }

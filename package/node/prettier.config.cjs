@@ -1,2 +1,6 @@
 /** @type {import("prettier").Config} */
-module.exports = require('@kxh/config-prettier')
+module.exports = {
+  tabWidth: 2,
+  semi: false,
+  singleQuote: true,
+}

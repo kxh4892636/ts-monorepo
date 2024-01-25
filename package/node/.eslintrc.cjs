@@ -1,2 +1,35 @@
 // eslint-disable-next-line no-undef
-module.exports = require('@kxh/config-eslint-ts-node')
+module.exports = {
+  root: true,
+  env: { es2020: true, node: true },
+  extends: [
+    'eslint:recommended',
+    'standard',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:import/recommended',
+    'plugin:import/typescript',
+    'plugin:promise/recommended',
+    'plugin:prettier/recommended',
+  ],
+  parser: '@typescript-eslint/parser',
+  parserOptions: { ecmaVersion: 'latest', sourceType: 'module' },
+  plugins: ['@typescript-eslint', 'import', 'promise'],
+  rules: {
+    'no-multiple-empty-lines': ['error', { max: 1, maxEOF: 0 }],
+    'import/default': 0,
+    'import/no-named-as-default-member': 0,
+    'no-use-before-define': 0,
+    'lines-between-class-members': 0,
+  },
+  settings: {
+    'import/resolver': {
+      typescript: {
+        alwaysTryTypes: true,
+        project: ['tsconfig.json'],
+      },
+      node: {
+        project: ['tsconfig.json'],
+      },
+    },
+  },
+}
