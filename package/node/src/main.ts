@@ -1,2 +1,3 @@
-const s = 'Hello, World!'
-console.log(s)
+import { print } from '@/fn'
+
+print()

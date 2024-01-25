@@ -8,7 +8,7 @@ await esbuild.build({
   sourcemap: true,
   format: 'esm',
   minify: true,
-  target: 'es6',
+  target: 'ES2015',
   banner: {
     js: `
         import path from 'path';

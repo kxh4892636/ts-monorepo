@@ -11,6 +11,7 @@ module.exports = {
     'plugin:jsx-a11y/recommended',
     'plugin:promise/recommended',
     'plugin:react/recommended',
+    'plugin:react/jsx-runtime',
     'plugin:react-hooks/recommended',
     'plugin:prettier/recommended',
   ],
@@ -31,7 +32,7 @@ module.exports = {
     'import/resolver': {
       typescript: {
         alwaysTryTypes: true,
-        project: ['tsconfig.json'],
+        project: ['package/*/tsconfig.json'],
       },
     },
   },
