@@ -22,15 +22,13 @@ const initializeRoutes = (app: FastifyInstance) => {
 
 const startApp = async (app: FastifyInstance, port: number) => {
   try {
-    console.log('Serdfdffver start.')
     await app.listen({ port })
-    console.log('Server start.')
-    // if (process.env.NODE_ENV === 'production') {
-    //   console.log('production')
-    // } else {
-    //   process.env.NODE_ENV = 'development'
-    //   console.log('development')
-    // }
+    if (process.env.NODE_ENV === 'production') {
+      console.log('production')
+    } else {
+      process.env.NODE_ENV = 'development'
+      console.log('development')
+    }
   } catch (err) {
     app.log.error(err)
     process.exit(1)

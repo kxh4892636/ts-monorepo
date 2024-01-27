@@ -1,6 +1,6 @@
 import { FastifyInstance } from 'fastify'
 
-export const testRoutes = (app: FastifyInstance) => {
+export const testRoutes = async (app: FastifyInstance) => {
   app.route({
     method: 'get',
     url: '/test',

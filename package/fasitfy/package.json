@@ -8,15 +8,16 @@
   "author": "",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon src/main.ts",
+    "dev": "tsx watch src/main.ts",
     "build": "node ./esbuild.config.js",
-    "start": "node ./dist/main.js",
+    "start": "cross-env NODE_ENV=production node ./dist/main.js",
     "lint": "eslint src/**/* test/**/* --max-warnings 0",
     "prettier": "prettier src/**/* test/**/* --write",
     "format": "pnpm prettier && pnpm lint"
   },
   "devDependencies": {
     "@types/node": "^18.16.16",
+    "cross-env": "^7.0.3",
     "nodemon": "^3.0.3",
     "prisma": "^5.8.1",
     "tsconfig-paths": "^4.2.0"
