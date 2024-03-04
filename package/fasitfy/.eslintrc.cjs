@@ -8,12 +8,11 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'plugin:import/recommended',
     'plugin:import/typescript',
-    'plugin:promise/recommended',
     'plugin:prettier/recommended',
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: { ecmaVersion: 'latest', sourceType: 'module' },
-  plugins: ['@typescript-eslint', 'import', 'promise'],
+  plugins: ['@typescript-eslint', 'import'],
   rules: {
     'no-multiple-empty-lines': ['error', { max: 1, maxEOF: 0 }],
     'import/default': 0,

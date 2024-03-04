@@ -9,7 +9,6 @@ module.exports = {
     'plugin:import/recommended',
     'plugin:import/typescript',
     'plugin:jsx-a11y/recommended',
-    'plugin:promise/recommended',
     'plugin:react/recommended',
     'plugin:react/jsx-runtime',
     'plugin:react-hooks/recommended',
@@ -17,7 +16,7 @@ module.exports = {
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: { ecmaVersion: 'latest', sourceType: 'module' },
-  plugins: ['@typescript-eslint', 'jsx-a11y', 'promise', 'import'],
+  plugins: ['@typescript-eslint', 'jsx-a11y', 'import'],
   rules: {
     'no-multiple-empty-lines': ['error', { max: 1, maxEOF: 0 }],
     'import/default': 0,
