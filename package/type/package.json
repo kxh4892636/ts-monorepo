@@ -7,15 +7,12 @@
   "keywords": [],
   "author": "",
   "license": "MIT",
+  "main": "src/main.ts",
   "scripts": {
-    "execute": "node ./dist/main.js",
     "build": "node ./esbuild.config.js",
     "lint": "eslint src/**/* --max-warnings 0",
     "prettier": "prettier src/**/* --write",
-    "format": "pnpm prettier && pnpm lint",
-    "test": "vitest --config ./vitest.config.ts",
-    "test:coverage": "vitest run --config ./vitest.config.ts --coverage",
-    "bench": "vitest bench --config ./vitest.config.ts"
+    "format": "pnpm prettier && pnpm lint"
   },
   "devDependencies": {}
 }

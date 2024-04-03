@@ -23,6 +23,9 @@ module.exports = {
     'import/no-named-as-default-member': 0,
     'no-use-before-define': 0,
     'lines-between-class-members': 0,
+    'react-hooks/exhaustive-deps': 0,
+    '@typescript-eslint/no-non-null-assertion': 0,
+    '@typescript-eslint/no-explicit-any': 0,
   },
   settings: {
     react: {

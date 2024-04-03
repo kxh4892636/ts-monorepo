@@ -1,7 +1,6 @@
 # Temporary file
-*demo*
-*temp*
 prisma
+doc
 
 # IDE config
 .vscode
